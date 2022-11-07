@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "parrafo";
+  src: url(./fuentes/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "titulo";
+  src: url(./fuentes/Poppins-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.2rem;
+  background-image: linear-gradient(0deg, #ffdee9 36%, #b5fffc 100%);
+}
+
+.contenedor {
+  text-align: center;
+  background-color: #f0f0f0;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  border: 0.1rem solid rgba(255, 255, 255, 1);
+}
+
+h2 {
+  font-family: "titulo";
+  margin: 0 0 2rem 0;
+}
+
+p {
+  font-family: "parrafo";
+  margin: 0;
+}
+
+span {
+  font-size: 4rem;
+}
+
+h2,
+span {
+  margin-bottom: 0;
+}
+
+.precio {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: "parrafo";
+  margin: 1rem 0 5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.columna-1 button {
+  background-color: #fc4e8c;
+  color: #000000;
+}
+
+.columna-2 button {
+  background-color: #09e1ef;
+  color: #000000;
+}
+
+.columna-3 button {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+/*Media Queries*/
+@media (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15rem auto;
+    column-gap: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  span {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .precio {
+    font-size: 1.3rem;
+  }
+
+  button {
+    margin: 3rem 0 0 0;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+
+  .columna-1,
+  .columna-2,
+  .columna-3 {
+    text-align: start;
+    display: grid;
+  }
+}
