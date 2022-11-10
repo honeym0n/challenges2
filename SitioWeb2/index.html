@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SitioWeb2</title>
-
+    <script src="https://kit.fontawesome.com/d9a429e5e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -25,6 +25,7 @@
                     <a href="#adopta" class="navegacion__enlace">Adopta</a>
                     <a href="#servicios" class="navegacion__enlace">Servicios</a>
                     <a href="#contacto" class="navegacion__enlace">Contacto</a>
+                    <a href="micuenta.html" class="navegacion__enlace">Login</a>
                 </nav>
             </div>
         </div>
@@ -35,7 +36,7 @@
             <p class="parrafo1">¡Sé parte de su nueva vida!
                 Conoce sus historias y ayúdalos a encontrar un hogar definitivo donde disfruten sus días al máximo.</p>
             <p>Ven y encuentra a tu nuevo mejor amigo.</p>
-            <button>Cambia una vida</button>
+            <button> <a href="#contacto">Cambia una vida</a></button>
             <img class="mascotas" src=".//imagenes/img1.png">
         </div>
     </main>
@@ -84,10 +85,89 @@
                 <p>Edad: 2 meses</p>
                 <p>Tamaño: pequeño</p>
             </div>
-
-
             <a class="btn" href="adopta.html">Ver más mascotitas...</a>
         </div>
+    </section>
+
+    <!-- Section Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="servicios-texto">
+            <h2 class="centrar">Servicios</h2>
+            <h3 class="centrar">Nuestros servicios</h3>
+
+            <div class="servicios-1">
+                <i class="logo fa-solid fa-paw"></i>
+                <h3>Rescate</h3>
+                <p>Se brinda una atención primaria a aquellos animales que se encuentren en situaciones de peligro,
+                    abandono o
+                    maltrato. Con esta actividad se pretende incidir en el problema de los animales lesionados,
+                    abandonados y
+                    maltratados con lo cual ayudamos a rescatar perros, gatos y otras especies para después buscarles
+                    hogares
+                    adoptivos responsables.</p>
+            </div>
+
+            <div class="servicios-2">
+                <i class="logo fa-solid fa-hand-holding-heart"></i>
+                <h3>Albergue</h3>
+                <p>Proporcionamos refugio y cuidados a los animales rescatados, nos hacemos responsables de su
+                    alimentación,
+                    higiene, salud y demás necesidades que posee un animal después de haber pasado por situaciones de
+                    maltrato o abandono.</p>
+            </div>
+
+            <div class="servicios-3">
+                <i class="logo fa-solid fa-people-group"></i>
+                <h3>Difusión</h3>
+                <p>Concientizamos a la sociedad acerca del respeto, cuidado y consideración a los animales de compañía
+                    para
+                    erradicar y sancionar el maltrato así como los actos de crueldad. No podemos olvidar que los
+                    animales
+                    son seres vivos que sienten y no deben ser considerados como objetos y ser utilizados como estos.
+                    Ellos
+                    también son capaces de sentir alegría, dolor y sufrimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contacto -->
+    <section class="contacto" id="contacto">
+        <h3 class="centro">¿Listos para adoptar?</h3>
+        <p class="centro">Rellena nuestro formulario, no olvides el nombre de la mascotita.</p>
+            <div class="contacto-form">
+                <form>
+                    <p>
+                        <label>Nombre y Apellido</label>
+                        <input type="text">
+                    </p>
+
+                    <p>
+                        <label>Correo electrónico</label>
+                        <input type="email">
+                    </p>
+
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel">
+                    </p>
+
+                    <p>
+                        <label>Nombre de la mascotita</label>
+                        <input type="text">
+                    </p>
+
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea rows="3"> </textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>  
     </section>
 
 </body>
